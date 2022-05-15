@@ -1,0 +1,15 @@
+bool solution(string inputString) {
+    
+    int i =0, j = inputString.Length-1  , count =0 ;
+    while(i!=inputString.Length){
+        
+        if(inputString[i]==inputString[j]){
+        count++;}
+        i++; j--;
+    }
+    
+    if(count == inputString.Length){ return true;}
+    else{
+        return false;
+    }
+}
